@@ -86,18 +86,15 @@ def plot_correlation(dataframe, report_file):
 
 # Create a Jupyter notebook with the content of the Markdown
 def create_jupyter(report_file, notebook_file):
-    nb = nbf.NotebookNode()
-    nb.cells = []
+    # Create a new notebook
+    nb = nbf.v4.new_notebook()
 
     # Read the Markdown content
     with open(report_file, "r", encoding="utf-8") as file:
         markdown_content = file.read()
 
-    # Convert Markdown to a notebook cell
-    notebook_cell = nbf.NotebookNode(
-        cell_type="markdown", metadata={}, source=markdown_content
-    )
-
+    # Create a Markdown cell with the content
+    notebook_cell = nbf.v4.new_markdown_cell(source=markdown_content)
     nb.cells.append(notebook_cell)
 
     # Save the notebook to a file
