@@ -64,7 +64,8 @@ This repository should contain the following necessary files to build the GitHub
 ## Results of Data Analysis
 This is an overview of the generated summary statistics and the data visualizations:
 
-* Summary stats:
+#### Summary Statistics
+
 |                  |   count |           mean |            std |    min |        25% |         50% |         75% |         max |      median |        std_dev |       range |     variance |
 |:-----------------|--------:|---------------:|---------------:|-------:|-----------:|------------:|------------:|------------:|------------:|---------------:|------------:|-------------:|
 | loan_id          |    4269 | 2135           | 1232.5         |      1 | 1068       | 2135        | 3202        | 4269        | 2135        | 1232.5         | 4268        |  1.51905e+06 |
@@ -73,14 +74,16 @@ This is an overview of the generated summary statistics and the data visualizati
 | loan_amount      |    4269 |    1.51335e+07 |    9.04336e+06 | 300000 |    7.7e+06 |    1.45e+07 |    2.15e+07 |    3.95e+07 |    1.45e+07 |    9.04336e+06 |    3.92e+07 |  8.17824e+13 |
 | loan_term        |    4269 |   10.9004      |    5.70919     |      2 |    6       |   10        |   16        |   20        |   10        |    5.70919     |   18        | 32.5948      |
 
-* Histogram
+
+#### Histogram:
 ![Histograms](Histogram_column_distributions.png)
 
-* Bar graphs
+#### Bar graphs:
 ![loan_term](Bar_graph_loan_term.png)
 
 ![no_of_dependents](Bar_graph_no_of_dependents.png)
-* Correlation plot
+
+#### Correlation plot:
 ![Correlation Matrix](Correlation_matrix.png)
 
 
