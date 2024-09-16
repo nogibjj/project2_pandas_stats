@@ -1,5 +1,5 @@
 Check CI/CD Status:
-(paste here)
+[![CI](https://github.com/nogibjj/project2_pandas_stats/blob/main/.github/workflows/main.yml/badge.svg)](https://github.com/nogibjj/project2_pandas_stats/blob/main/.github/workflows/main.yml)
 
 # Mini-project #2
 ### repo title: project2_pandas_stats
