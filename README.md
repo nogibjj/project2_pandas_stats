@@ -1,9 +1,8 @@
 Check CI/CD Status:
-[![Python Application Test with Github Actions](https://github.com/nogibjj/project2_pandas_stats/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/project2_pandas_stats/actions/workflows/main.yml)
+[![CICD](https://github.com/nogibjj/project2_pandas_stats/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/project2_pandas_stats/actions/workflows/main.yml)
 
 # Mini-project #2
-### repo title: project2_pandas_stats
-
+repo title: project2_pandas_stats
 Author: Seijung Kim (sk591)
 
 ## Overview
@@ -32,7 +31,7 @@ This dataset inclues a total of 13 variables: `loan_id`, `no_of_dependents`, `ed
 * The projects uses the first 7 of the variables introduced above, which are: `loan_id`, `no_of_dependents`, `education`, `self_employed`, `income_annum`, `loan_amount`, `loan_term`.
 
 ## Summary Statistics
-The `main.py` provides the mean, median, std_dev, range, and variance. You can generated these statistics using the `summary_statistics` function. 
+The `main.py` provides the mean, median, std_dev, range, and variance. It also provides histograms and correlation matrices for data visualization.
 
 * To calculate and save summary statistics to a Markdown report, use:
 `summary_statistics(dataframe, report_file)`
@@ -49,7 +48,7 @@ The `main.py` provides the mean, median, std_dev, range, and variance. You can g
 ## Instructions
 This repository should contain the following necessary files to build the GitHub workflow and requirements for executing the scripts for data analysis:
 
-* Makefile
+* Makefile (with install, format, lint, test, all)
 * requirements.txt
 * .devcontainer (with .devcontainer.json and Dockerfile)
 * .github/workflows for GitHub Actions (with main.yml)
@@ -61,3 +60,6 @@ This repository should contain the following necessary files to build the GitHub
 3. Check whether you are able to display the statistics and data visualization when running `main.py` and `test_main.py`
 4. You can check the full summary documentation as a Jupyter Notebook or PDF. Check `summary_report.md` and `summary_report.ipynb`.
 5. To check the full status of the CI/CD pipeline, navigate to the Actions tab of your repository on GitHub.
+
+## Results of Data Analysis
+* Also check summary_report.md and summary_report.ipynb for the full documentations.

@@ -1,36 +1,21 @@
-name: Python Application Test with Github Actions 
+name: CICD
 on:
-  schedule:
-  - cron:  '0 3 * * SUN'
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    
+    runs-on: ubuntu-latest #VM that GH actions will run on
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Python 3.8
-        uses: actions/setup-python@v1
-        with: 
-          python-version: 3.8
-          
-      - name: install packages and dependencies
-        run: |
-          make install
-      - name: lint with pylint
-        run: |
-          make lint
-      - name: test with pytest
-        run: |
-          make test
-      - name: format with black 
-        run: |
-          make format
-      - name: deploy the app
-        run: |
-          make deploy
+      - name: install packages
+        run: make install
+      - name: format
+        run: make format
+      - name: lint
+        run: make lint
+      - name: test
+        run: make test
