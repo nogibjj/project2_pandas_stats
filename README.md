@@ -1,5 +1,5 @@
 Check CI/CD Status:
-[![CI](https://github.com/nogibjj/project2_pandas_stats/blob/main/.github/workflows/main.yml/badge.svg)](https://github.com/nogibjj/project2_pandas_stats/blob/main/.github/workflows/main.yml)
+[![Python Application Test with Github Actions](https://github.com/nogibjj/project2_pandas_stats/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/project2_pandas_stats/actions/workflows/main.yml)
 
 # Mini-project #2
 ### repo title: project2_pandas_stats
@@ -32,9 +32,19 @@ This dataset inclues a total of 13 variables: `loan_id`, `no_of_dependents`, `ed
 * The projects uses the first 7 of the variables introduced above, which are: `loan_id`, `no_of_dependents`, `education`, `self_employed`, `income_annum`, `loan_amount`, `loan_term`.
 
 ## Summary Statistics
-The `main.py` provides the mean, median, std_dev, range, and variance. You can generated these statistics using the `summary_statistics` function.
+The `main.py` provides the mean, median, std_dev, range, and variance. You can generated these statistics using the `summary_statistics` function. 
 
-## Statistical functions
+* To calculate and save summary statistics to a Markdown report, use:
+`summary_statistics(dataframe, report_file)`
+
+* To plot histograms for specific columns and save them to a report file, use: 
+`plot_histograms(dataframe, columns, report_file, bins=20)`
+
+* To plot the correlation matrix and save it to a report file, use:
+`plot_correlation(dataframe, columns, report_file)`
+
+* To create a Jupyter Notebook from the Markdown report, use:
+`create_jupyter(report_file, notebook_file)`
 
 ## Instructions
 This repository should contain the following necessary files to build the GitHub workflow and requirements for executing the scripts for data analysis:
